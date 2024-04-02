@@ -1,0 +1,37 @@
+.hero-container {
+    background-image: url('C:\Users\thaan\OneDrive\Desktop\PF Convergent\PersonalFinance\angelconnectfinal\public\finalimage.jpg'); /* Change the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    text-align: left;
+    font-size: 10px;
+    color: white;
+    padding-top: 300 px;
+    margin-top: 200px; /* Optional: Add margin-top if padding alone doesn't work */
+    margin-right: 250px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .big-word {
+    font-size: 2em; /* Adjust the value as needed */
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  
