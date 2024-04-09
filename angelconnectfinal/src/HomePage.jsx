@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 
 import * as React from "react";
 
-function App() {
+function Home() {
   return (
     <div className="flex flex-col items-center bg-white">
       <div className="flex gap-5 justify-center items-start self-stretch px-16 pt-20 w-full text-2xl text-black max-md:flex-wrap max-md:px-5 max-md:max-w-full">
@@ -178,4 +178,4 @@ function App() {
   );
 }
 
-export default App
+export default Home
