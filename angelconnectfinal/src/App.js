@@ -5,12 +5,12 @@ import HomePage from './HomePage.jsx'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<HeroPage />} />
         <Route path="/home" element={<HomePage />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
