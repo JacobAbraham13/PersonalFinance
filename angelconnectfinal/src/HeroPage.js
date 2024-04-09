@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 const HeroPage = () => {
 
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const redirectToOtherPage = () => {
-    //navigate('/home'); 
+    navigate('/home'); 
   };
 
   return (
