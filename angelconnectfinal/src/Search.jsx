@@ -2,7 +2,7 @@ import './Search.css'
 import * as React from "react";
 import { useState } from 'react'
 
-function MyComponent() {
+function Search() {
   return (
     <div className="flex flex-col bg-gray-300">
       <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
@@ -232,4 +232,4 @@ function MyComponent() {
   );
 }
 
-
+export default Search
