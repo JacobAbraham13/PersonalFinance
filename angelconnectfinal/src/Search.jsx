@@ -1,7 +1,7 @@
 import './Search.css'
 import * as React from "react";
 import { useState } from 'react'
-
+import SearchProfile from './SearchProfile'
 function Search() {
   return (
     <div className="flex flex-col bg-gray-300">
@@ -86,6 +86,7 @@ function Search() {
             />
           </div>
         </div>
+        <SearchProfile></SearchProfile>
         <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
           <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
           <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
