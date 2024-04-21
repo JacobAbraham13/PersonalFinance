@@ -14,7 +14,7 @@ function Search() {
           <div className="self-stretch my-auto">Browse</div>
           <div className="self-stretch my-auto">Manage</div>
           <div className="flex gap-5 justify-end self-stretch px-8 py-3.5 my-auto bg-zinc-100 rounded-[51px] text-neutral-400 max-md:px-5">
-            <div className="my-auto">Search...</div>
+            <input className="my-auto no-border bg-zinc-100" placeholder="Search..."></input>
             <img
               loading="lazy"
               src=""
@@ -29,7 +29,7 @@ function Search() {
         </div>
       </div>
       <div className="flex flex-col justify-center w-full text-6xl font-black text-center text-white bg-teal-600 max-md:max-w-full max-md:text-4xl">
-        <div className="overflow-hidden relative flex-col justify-center items-center px-16 pt-20 pb-96 w-full min-h-[611px] max-md:px-5 max-md:pb-10 max-md:max-w-full max-md:text-4xl">
+        <div className="overflow-hidden relative flex-col justify-center items-center px-16 pt-20 w-full max-md:px-5 max-md:pb-10 max-md:max-w-full max-md:text-4xl">
           <img
             loading="lazy"
             srcSet="..."
@@ -40,7 +40,7 @@ function Search() {
       </div>
       <div className="flex z-10 flex-col self-center py-14 pl-20 mt-0 w-full rounded-3xl bg-zinc-100 max-w-[1347px] max-md:pl-5 max-md:mt-0 max-md:max-w-full">
         <div className="flex gap-5 self-center px-6 py-3 max-w-full text-xl text-black bg-white border border-solid border-zinc-800 rounded-[45px] w-[744px] max-md:flex-wrap max-md:pr-5">
-          <div className="flex-auto">Baking goods</div>
+          <input className="flex-auto no-border" placeholder="Search..."></input>
           <img
             loading="lazy"
             src=""
@@ -50,7 +50,7 @@ function Search() {
         <div className="flex gap-5 self-center mt-11 max-w-full w-[922px] max-md:flex-wrap max-md:mt-10">
           <div className="flex flex-auto gap-5 justify-between self-start text-base text-neutral-600 max-md:flex-wrap">
             <div className="flex gap-5 justify-end py-2.5 pr-2.5 pl-5 whitespace-nowrap bg-white rounded-lg border border-solid border-zinc-800">
-              <div>Sector</div>
+              <input className="no-border" placeholder="Sector"></input>
               <img
                 loading="lazy"
                 srcSet="..."
@@ -58,7 +58,7 @@ function Search() {
               />
             </div>
             <div className="flex gap-5 justify-end py-2.5 pr-2 pl-5 whitespace-nowrap bg-white rounded-lg border border-solid border-zinc-800">
-              <div>Location</div>
+              <input className="no-border" placeholder="Location"></input>
               <img
                 loading="lazy"
                 srcSet="..."
@@ -66,7 +66,7 @@ function Search() {
               />
             </div>
             <div className="flex gap-5 justify-end py-2 pr-2 pl-5 bg-white rounded-lg border border-solid border-zinc-800">
-              <div>Year founded</div>
+              <input className="no-border" placeholder="Year founded"></input>
               <img
                 loading="lazy"
                 srcSet="..."
@@ -86,6 +86,7 @@ function Search() {
             />
           </div>
         </div>
+
         <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
           <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
           <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
@@ -93,9 +94,9 @@ function Search() {
               <div className="flex-auto my-auto text-3xl font-extrabold text-zinc-800">
                 XYZ Lender Inc.{" "}
               </div>
-              <div className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 rounded-[54px] max-md:px-5">
+              <button className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 rounded-[54px] max-md:px-5">
                 Connect
-              </div>
+              </button>
             </div>
             <div className="mt-5 text-xl text-black max-md:max-w-full">
               Sectors: Lorem Ipsum
@@ -110,17 +111,19 @@ function Search() {
           Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
           phasellus vestibulum.
         </div>
+
         <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
-        <div className="flex gap-5 self-start mt-12 ml-4 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+
+        <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
           <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
           <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
+            <div className="flex gap-5 max-md:flex-wrap max-md:max-w-full">
               <div className="flex-auto my-auto text-3xl font-extrabold text-zinc-800">
                 XYZ Lender Inc.{" "}
               </div>
-              <div className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 ml-[510px] rounded-[54px] max-md:px-5">
+              <button className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 rounded-[54px] max-md:px-5">
                 Connect
-              </div>
+              </button>
             </div>
             <div className="mt-5 text-xl text-black max-md:max-w-full">
               Sectors: Lorem Ipsum
@@ -135,17 +138,19 @@ function Search() {
           Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
           phasellus vestibulum.
         </div>
-        <div className="shrink-0 self-end mt-9 max-w-full h-px border border-solid bg-zinc-500 border-zinc-500 w-[1200px]" />
-        <div className="flex gap-5 self-start mt-12 ml-4 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+
+        <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
+        
+        <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
           <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
           <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
+            <div className="flex gap-5 max-md:flex-wrap max-md:max-w-full">
               <div className="flex-auto my-auto text-3xl font-extrabold text-zinc-800">
                 XYZ Lender Inc.{" "}
               </div>
-              <div className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 ml-[510px] rounded-[54px] max-md:px-5">
+              <button className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 rounded-[54px] max-md:px-5">
                 Connect
-              </div>
+              </button>
             </div>
             <div className="mt-5 text-xl text-black max-md:max-w-full">
               Sectors: Lorem Ipsum
@@ -159,41 +164,9 @@ function Search() {
           facilisi ac. Pulvinar turpis malesuada blandit porta curabitur odio.
           Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
           phasellus vestibulum.
-        </div>
-        <div className="shrink-0 self-end mt-10 max-w-full h-px border border-solid bg-zinc-500 border-zinc-500 w-[1200px] max-md:mt-10" />
-        <div className="flex gap-5 self-start mt-10 ml-4 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-          <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
-          <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
-              <div className="flex-auto my-auto text-3xl font-extrabold text-zinc-800">
-                XYZ Lender Inc.{" "}
-              </div>
-              <div className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 ml-[510px] rounded-[54px] max-md:px-5">
-                Connect
-              </div>
-            </div>
-            <div className="mt-5 text-xl text-black max-md:max-w-full">
-              Sectors: Lorem Ipsum
-              <br />
-              Location: Austin, TX
-            </div>
-          </div>
-        </div>
-        <div className="self-center mt-11 text-xl text-black w-[888px] max-md:mt-10 max-md:max-w-full">
-          Lorem ipsum dolor sit amet consectetur. Lorem lacinia volutpat
-          facilisi ac. Pulvinar turpis malesuada blandit porta curabitur odio.
-          Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
-          phasellus vestibulum.
-        </div>
-        <div className="flex gap-5 self-center py-6 pl-8 mt-9 text-2xl text-center text-black max-md:pl-5">
-          <div className="flex-auto my-auto">Load more results</div>
-          <img
-            loading="lazy"
-            srcSet="..."
-            className="shrink-0 aspect-square w-[27px]"
-          />
         </div>
       </div>
+      
       <div className="flex flex-col px-20 py-11 mt-24 w-full bg-neutral-600 max-md:px-5 max-md:mt-10 max-md:max-w-full">
         <div className="max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">

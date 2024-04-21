@@ -297,6 +297,7 @@
   
   .pt-20 {
     padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   
   .pb-96 {
@@ -577,4 +578,9 @@
     .max-md\:w-full {
       width: 100%;
     }
+  }
+
+  .no-border {
+    border: none;
+    outline: none;
   }
