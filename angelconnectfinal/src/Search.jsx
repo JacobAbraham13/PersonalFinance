@@ -1,6 +1,7 @@
 import './Search.css'
 import * as React from "react";
 import { useState } from 'react'
+import SearchProfile from './SearchProfile';
 
 function Search() {
   return (
@@ -87,7 +88,7 @@ function Search() {
           </div>
         </div>
 
-        <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
+        {/* <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
           <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
           <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-wrap max-md:max-w-full">
@@ -110,9 +111,14 @@ function Search() {
           facilisi ac. Pulvinar turpis malesuada blandit porta curabitur odio.
           Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
           phasellus vestibulum.
-        </div>
+        </div> */}
+
 
         <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
+        <SearchProfile></SearchProfile>
+        <SearchProfile></SearchProfile>
+
+        {/* <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
 
         <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
           <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
@@ -164,7 +170,7 @@ function Search() {
           facilisi ac. Pulvinar turpis malesuada blandit porta curabitur odio.
           Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
           phasellus vestibulum.
-        </div>
+        </div> */}
       </div>
       
       <div className="flex flex-col px-20 py-11 mt-24 w-full bg-neutral-600 max-md:px-5 max-md:mt-10 max-md:max-w-full">
