@@ -7,7 +7,7 @@ const HeroPage = () => {
   const navigate = useNavigate();
 
   const redirectToOtherPage = () => {
-    navigate('/home'); 
+    navigate('/Profile'); 
   };
 
   return (

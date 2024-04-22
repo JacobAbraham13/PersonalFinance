@@ -1,8 +1,16 @@
 import './Profile.css'
 import * as React from "react";
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Profile() {
+
+  const navigate = useNavigate();
+
+  const redirectToOtherPage = () => {
+    navigate('/Search'); 
+  };
+
   return (
     <div className="flex flex-col pb-20 bg-gray-300">
       <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
