@@ -102,7 +102,7 @@ function Profile() {
             </div>
           </div>
           <button onClick={redirectToOtherPage} className="justify-center items-center self-center px-5 py-3 mt-28 max-w-full text-4xl bg-green-300 border border-solid border-zinc-800 rounded-[54px] max-md:px-5 max-md:mt-10">
-            CREATE PROFILE
+            Create Profile
           </button>
         </div>
       </div>

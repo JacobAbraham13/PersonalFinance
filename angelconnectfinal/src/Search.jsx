@@ -3,9 +3,17 @@ import React, { useEffect, useState } from 'react';
 import SearchProfile from './SearchProfile';
 import db from './firebaseConfig';
 import { collection, getDocs } from "firebase/firestore";
+import { useNavigate } from 'react-router-dom';
+
 
 function Search() {
   const [profiles, setProfiles] = useState([]);
+
+  const navigate = useNavigate();
+
+  const redirectToOtherPage = () => {
+    navigate('/manageloans'); 
+  };
 
   const userProfile = {
     name: "TechHealth Innovations",
