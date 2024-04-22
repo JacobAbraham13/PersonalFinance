@@ -1,9 +1,46 @@
-import './Search.css'
-import * as React from "react";
-import { useState } from 'react'
+import './Search.css';
+import React, { useEffect, useState } from 'react';
 import SearchProfile from './SearchProfile';
+import db from './firebaseConfig';
+import { collection, getDocs } from "firebase/firestore";
 
 function Search() {
+  const [profiles, setProfiles] = useState([]);
+
+  const userProfile = {
+    name: "TechHealth Innovations",
+    sectors: ["Technology", "Healthcare"],
+    location: "San Francisco, CA",
+    description: "Experienced software developer with a passion for integrating technology in healthcare. Alex has over 10 years of experience working with startups and major tech companies to deliver cutting-edge solutions.",
+  };
+
+  // Function to add a new profile
+  const addProfile = (newProfile) => {
+    setProfiles(currentProfiles => [...currentProfiles, newProfile]);
+  };  
+
+  useEffect(() => {
+    const fetchProfiles = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "companies"));
+        const profileData = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setProfiles(profileData);
+      } catch (error) {
+        console.error("Error fetching profiles:", error);
+      }
+    };
+
+    fetchProfiles();
+  }, []);
+
+
+
+  
+  
+  
   return (
     <div className="flex flex-col bg-gray-300">
       <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
@@ -88,89 +125,17 @@ function Search() {
           </div>
         </div>
 
-        {/* <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
-          <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
-          <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-wrap max-md:max-w-full">
-              <div className="flex-auto my-auto text-3xl font-extrabold text-zinc-800">
-                XYZ Lender Inc.{" "}
-              </div>
-              <button className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 rounded-[54px] max-md:px-5">
-                Connect
-              </button>
-            </div>
-            <div className="mt-5 text-xl text-black max-md:max-w-full">
-              Sectors: Lorem Ipsum
-              <br />
-              Location: Austin, TX
-            </div>
-          </div>
-        </div>
-        <div className="self-center mt-11 text-xl text-black w-[888px] max-md:mt-10 max-md:max-w-full">
-          Lorem ipsum dolor sit amet consectetur. Lorem lacinia volutpat
-          facilisi ac. Pulvinar turpis malesuada blandit porta curabitur odio.
-          Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
-          phasellus vestibulum.
-        </div> */}
+      
 
-
-        <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
-        <SearchProfile></SearchProfile>
-        <SearchProfile></SearchProfile>
-
-        {/* <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
-
-        <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
-          <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
-          <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-wrap max-md:max-w-full">
-              <div className="flex-auto my-auto text-3xl font-extrabold text-zinc-800">
-                XYZ Lender Inc.{" "}
-              </div>
-              <button className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 rounded-[54px] max-md:px-5">
-                Connect
-              </button>
-            </div>
-            <div className="mt-5 text-xl text-black max-md:max-w-full">
-              Sectors: Lorem Ipsum
-              <br />
-              Location: Austin, TX
-            </div>
-          </div>
-        </div>
-        <div className="self-center mt-11 text-xl text-black w-[888px] max-md:mt-10 max-md:max-w-full">
-          Lorem ipsum dolor sit amet consectetur. Lorem lacinia volutpat
-          facilisi ac. Pulvinar turpis malesuada blandit porta curabitur odio.
-          Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
-          phasellus vestibulum.
-        </div>
 
         <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
         
-        <div className="flex gap-5 mt-20 ml-9 max-w-full w-[1046px] max-md:flex-wrap max-md:mt-10">
-          <div className="shrink-0 my-auto bg-neutral-400 h-[91px] rounded-[72px] w-[91px]" />
-          <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-wrap max-md:max-w-full">
-              <div className="flex-auto my-auto text-3xl font-extrabold text-zinc-800">
-                XYZ Lender Inc.{" "}
-              </div>
-              <button className="justify-center px-10 py-0.5 text-xl font-semibold text-center text-black whitespace-nowrap bg-teal-400 rounded-[54px] max-md:px-5">
-                Connect
-              </button>
-            </div>
-            <div className="mt-5 text-xl text-black max-md:max-w-full">
-              Sectors: Lorem Ipsum
-              <br />
-              Location: Austin, TX
-            </div>
-          </div>
-        </div>
-        <div className="self-center mt-11 text-xl text-black w-[888px] max-md:mt-10 max-md:max-w-full">
-          Lorem ipsum dolor sit amet consectetur. Lorem lacinia volutpat
-          facilisi ac. Pulvinar turpis malesuada blandit porta curabitur odio.
-          Varius eu ornare ipsum vitae non sed nisi nulla. Viverra dictum mi
-          phasellus vestibulum.
-        </div> */}
+        {profiles.map(profile => (
+          <SearchProfile key={profile.id} profile={profile} />
+        ))}
+        {/* <SearchProfile profile = {userProfile} /> */}
+
+      
       </div>
       
       <div className="flex flex-col px-20 py-11 mt-24 w-full bg-neutral-600 max-md:px-5 max-md:mt-10 max-md:max-w-full">
