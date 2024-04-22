@@ -43,35 +43,17 @@ function Search() {
 
     fetchProfiles();
   }, []);
-
-
-
-  
-  
   
   return (
     <div className="flex flex-col bg-gray-300">
-      <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-5 justify-between my-auto text-2xl max-md:flex-wrap">
-          <div className="shrink-0 bg-black h-[60px] rounded-[64px] w-[60px]" />
-          <div className="my-auto">Logo</div>
-        </div>
+      <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap header-color max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+        <img src="/AngelConnectLogo.png" alt="Angel Connect Logo" className="logoWidth" />
         <div className="flex gap-5 justify-between items-center text-2xl max-md:flex-wrap max-md:max-w-full">
-          <div className="self-stretch my-auto">Browse</div>
-          <div className="self-stretch my-auto">Manage</div>
+          <div className="self-stretch my-auto text-white">Browse</div>
+          <div className="self-stretch my-auto text-white">Manage</div>
           <div className="flex gap-5 justify-end self-stretch px-8 py-3.5 my-auto bg-zinc-100 rounded-[51px] text-neutral-400 max-md:px-5">
             <input className="my-auto no-border bg-zinc-100" placeholder="Search..."></input>
-            <img
-              loading="lazy"
-              src=""
-              className="shrink-0 aspect-[0.92] fill-white w-[22px]"
-            />
           </div>
-          <img
-            loading="lazy"
-            srcSet="..."
-            className="shrink-0 self-stretch aspect-square w-[82px]"
-          />
         </div>
       </div>
       <div className="flex flex-col justify-center w-full text-6xl font-black text-center text-white bg-teal-600 max-md:max-w-full max-md:text-4xl">
@@ -87,11 +69,6 @@ function Search() {
       <div className="flex z-10 flex-col self-center py-14 pl-20 mt-0 w-full rounded-3xl bg-zinc-100 max-w-[1347px] max-md:pl-5 max-md:mt-0 max-md:max-w-full">
         <div className="flex gap-5 self-center px-6 py-3 max-w-full text-xl text-black bg-white border border-solid border-zinc-800 rounded-[45px] w-[744px] max-md:flex-wrap max-md:pr-5">
           <input className="flex-auto no-border" placeholder="Search..."></input>
-          <img
-            loading="lazy"
-            src=""
-            className="shrink-0 aspect-[0.92] fill-black w-[22px]"
-          />
         </div>
         <div className="flex gap-5 self-center mt-11 max-w-full w-[922px] max-md:flex-wrap max-md:mt-10">
           <div className="flex flex-auto gap-5 justify-between self-start text-base text-neutral-600 max-md:flex-wrap">
