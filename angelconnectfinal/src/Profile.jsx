@@ -17,7 +17,7 @@ function Profile() {
             <div className="my-auto">Search...</div>
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eefd7263379bb07e73bed5e384997318682b40ee1217f1164fa87b53cccdef5?"
+              src=""
               className="shrink-0 aspect-[0.92] fill-white w-[22px]"
             />
           </div>

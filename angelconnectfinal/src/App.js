@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import HomePage from './HomePage.jsx'
 import Search from './Search.jsx'
 import Profile from './Profile.jsx'
+import ManageLoans from './ManageLoans.jsx';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/home" element={<HomePage />} />
         <Route path="/search" element={<Search />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/manageloans" element={<ManageLoans />} />
       </Routes>
   );
 }
