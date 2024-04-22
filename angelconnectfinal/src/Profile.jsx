@@ -67,11 +67,11 @@ function Profile() {
               You may update this description anytime in the future.
             </span>
           </div>
-          <input className="items-start px-5 pt-5 pb-52 mt-7 text-xl bg-white rounded-lg border border-solid border-zinc-800 text-neutral-400 max-md:pr-5 max-md:pb-10 max-md:max-w-full" placeholder="Enter your response here..."></input>
+          <input className="items-start px-5 pt-5 pb-52 mt-7 text-xl bg-white rounded-lg border border-solid border-zinc-800 max-md:pr-5 max-md:pb-10 max-md:max-w-full" placeholder="Enter your response here..."></input>
           <div className="mt-14 max-md:mt-10 max-md:max-w-full">
             Where is your business based?
           </div>
-          <input className="justify-center items-start px-5 py-3 mt-7 text-xl bg-white rounded-lg border border-solid border-zinc-800 text-neutral-400 max-md:pr-5 max-md:max-w-full" placeholder="Enter city or ZIP code"></input>
+          <input className="justify-center items-start px-5 py-3 mt-7 text-xl bg-white rounded-lg border border-solid border-zinc-800 max-md:pr-5 max-md:max-w-full" placeholder="Enter city or ZIP code"></input>
           <div className="mt-14 max-md:mt-10 max-md:max-w-full">
             When did you start your business?
           </div>
@@ -93,9 +93,9 @@ function Profile() {
               />
             </div>
           </div>
-          <div className="justify-center items-center self-center px-5 py-3 mt-28 max-w-full text-4xl bg-green-300 border border-solid border-zinc-800 rounded-[54px] max-md:px-5 max-md:mt-10">
+          <button className="justify-center items-center self-center px-5 py-3 mt-28 max-w-full text-4xl bg-green-300 border border-solid border-zinc-800 rounded-[54px] max-md:px-5 max-md:mt-10">
             CREATE PROFILE
-          </div>
+          </button>
         </div>
       </div>
     </div>
