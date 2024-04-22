@@ -387,6 +387,10 @@
  border-radius: 9999px;
 }
 
+.header-color {
+  background-color: #3C3C3C;
+}
+
 /* Additional Styles */
 img {
  max-width: 100%;

@@ -5,27 +5,14 @@ import { useState } from 'react'
 function ManageLoans() {
   return (
     <div className="flex flex-col bg-gray-300">
-      <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-5 justify-between my-auto text-2xl max-md:flex-wrap">
-          <div className="shrink-0 bg-black h-[60px] rounded-[64px] w-[60px]" />
-          <div className="my-auto">Logo</div>
-        </div>
+      <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full header-color">
+        <img src="/AngelConnectLogo.png" alt="Angel Connect Logo" className="logoWidth" />
         <div className="flex gap-5 justify-between items-center text-2xl max-md:flex-wrap max-md:max-w-full">
-          <div className="self-stretch my-auto">Browse</div>
-          <div className="self-stretch my-auto">Manage</div>
+          <div className="self-stretch my-auto text-white">Browse</div>
+          <div className="self-stretch my-auto text-white">Manage</div>
           <div className="flex gap-5 justify-end self-stretch px-8 py-3.5 my-auto bg-zinc-100 rounded-[51px] text-neutral-400 max-md:px-5">
-            <input className="my-auto no-border" placeholder="Search..."></input>
-            <img
-              loading="lazy"
-              src=""
-              className="shrink-0 aspect-[0.92] fill-white w-[22px]"
-            />
+            <input className="my-auto no-border bg-zinc-100" placeholder="Search..."></input>
           </div>
-          <img
-            loading="lazy"
-            srcSet="..."
-            className="shrink-0 self-stretch aspect-square w-[82px]"
-          />
         </div>
       </div>
       <div className="w-full bg-teal-600 min-h-[220px] max-md:max-w-full" />

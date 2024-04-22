@@ -26,8 +26,8 @@
     background-color: #d1d5db;
   }
   
-  .bg-zinc-300 {
-    background-color: #d4d4d8;
+  .header-color {
+    background-color: #3C3C3C;
   }
   
   .bg-zinc-100 {
@@ -150,8 +150,10 @@
     width: 100%;
   }
   
-  .w-\[60px\] {
-    width: 60px;
+  .logoWidth {
+    width: 500px;
+    margin-top: -50px;
+    margin-bottom: -50px;
   }
   
   .w-\[22px\] {

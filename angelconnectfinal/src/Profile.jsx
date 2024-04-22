@@ -5,27 +5,14 @@ import { useState } from 'react'
 function Profile() {
   return (
     <div className="flex flex-col pb-20 bg-gray-300">
-      <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-5 justify-between my-auto text-2xl max-md:flex-wrap">
-          <div className="shrink-0 bg-black h-[60px] rounded-[64px] w-[60px]" />
-          <div className="my-auto">Logo</div>
-        </div>
+      <div className="flex gap-5 justify-between px-14 py-7 w-full text-black whitespace-nowrap bg-zinc-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full header-color">
+        <img src="/AngelConnectLogo.png" alt="Angel Connect Logo" className="logoWidth" />
         <div className="flex gap-5 justify-between items-center text-2xl max-md:flex-wrap max-md:max-w-full">
-          <div className="self-stretch my-auto">Browse</div>
-          <div className="self-stretch my-auto">Manage</div>
+          <div className="self-stretch my-auto text-white">Browse</div>
+          <div className="self-stretch my-auto text-white">Manage</div>
           <div className="flex gap-5 justify-end self-stretch px-8 py-3.5 my-auto bg-zinc-100 rounded-[51px] text-neutral-400 max-md:px-5">
-            <div className="my-auto">Search...</div>
-            <img
-              loading="lazy"
-              src=""
-              className="shrink-0 aspect-[0.92] fill-white w-[22px]"
-            />
+            <input className="my-auto no-border bg-zinc-100" placeholder="Search..."></input>
           </div>
-          <img
-            loading="lazy"
-            srcSet="..."
-            className="shrink-0 self-stretch aspect-square w-[82px]"
-          />
         </div>
       </div>
       <div className="justify-center items-center px-16 pt-20 w-full text-6xl font-black text-center text-white bg-teal-600 max-md:px-5 max-md:pb-10 max-md:max-w-full max-md:text-4xl">
@@ -49,14 +36,7 @@ function Profile() {
             Which industry/sector does your business classify as? Please select
             the closest possible option.
           </div>
-          <div className="flex gap-5 justify-end py-2.5 pr-2.5 pl-5 mt-7 max-w-full text-xl bg-white rounded-lg border border-solid border-zinc-800 w-[390px]">
-            <div>Select industry/sector</div>
-            <img
-              loading="lazy"
-              srcSet="..."
-              className="shrink-0 aspect-square w-[25px]"
-            />
-          </div>
+          <input className="flex gap-5 justify-end py-2.5 pr-2.5 pl-5 mt-7 max-w-full text-xl bg-white rounded-lg border border-solid border-zinc-800 w-[390px]" placeholder="Select industry/sector"></input>
           <div className="mt-20 italic max-md:mt-10 max-md:max-w-full">
             <span className="">
               Please describe your business. This will be visible as part of
@@ -76,22 +56,8 @@ function Profile() {
             When did you start your business?
           </div>
           <div className="flex gap-5 justify-between self-start mt-7 text-xl whitespace-nowrap">
-            <div className="flex gap-5 justify-end py-2.5 pr-2.5 pl-5 bg-white rounded-lg border border-solid border-zinc-800">
-              <div>Month</div>
-              <img
-                loading="lazy"
-                srcSet="..."
-                className="shrink-0 aspect-square w-[25px]"
-              />
-            </div>
-            <div className="flex gap-5 justify-end py-2.5 pr-2.5 pl-5 bg-white rounded-lg border border-solid border-zinc-800">
-              <div>Year</div>
-              <img
-                loading="lazy"
-                srcSet="..."
-                className="shrink-0 aspect-square w-[25px]"
-              />
-            </div>
+          <input className="justify-center items-start px-5 py-4 bg-white rounded-lg border border-solid shadow-sm border-zinc-800 max-md:pr-5" placeholder="Month"></input>
+          <input className="justify-center items-start px-5 py-4 bg-white rounded-lg border border-solid shadow-sm border-zinc-800 max-md:pr-5" placeholder="Year"></input>
           </div>
           <button className="justify-center items-center self-center px-5 py-3 mt-28 max-w-full text-4xl bg-green-300 border border-solid border-zinc-800 rounded-[54px] max-md:px-5 max-md:mt-10">
             CREATE PROFILE
