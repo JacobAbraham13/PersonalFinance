@@ -8,7 +8,7 @@ function Profile() {
   const navigate = useNavigate();
 
   const redirectToOtherPage = () => {
-    navigate('/Search'); 
+    navigate('/searchlenders'); 
   };
 
   return (

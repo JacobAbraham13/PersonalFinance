@@ -6,7 +6,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useNavigate } from 'react-router-dom';
 
 
-function Search() {
+function SearchBusinesses() {
   const [profiles, setProfiles] = useState([]);
 
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ function Search() {
         <img src="/AngelConnectLogo.png" alt="Angel Connect Logo" className="logoWidth" />
         <div className="flex gap-5 justify-between items-center text-2xl max-md:flex-wrap max-md:max-w-full">
           <div className="self-stretch my-auto text-white">Browse</div>
-          <button onClick={redirectToOtherPage}className="self-stretch my-auto text-white header-color no-border">Manage</button>
+          <div className="self-stretch my-auto text-white">Manage</div>
           <div className="flex gap-5 justify-end self-stretch px-8 py-3.5 my-auto bg-zinc-100 rounded-[51px] text-neutral-400 max-md:px-5">
             <input className="my-auto no-border bg-zinc-100" placeholder="Search..."></input>
           </div>
@@ -58,7 +58,7 @@ function Search() {
       </div>
       <div className="flex flex-col justify-center w-full text-6xl font-black text-center text-white bg-teal-600 max-md:max-w-full max-md:text-4xl">
         <div className="overflow-hidden relative flex-col justify-center items-center px-16 pt-20 w-full max-md:px-5 max-md:pb-10 max-md:max-w-full max-md:text-4xl">
-          Search for Lenders
+          Search for Businesses
         </div>
       </div>
       <div className="flex z-10 flex-col self-center py-14 pl-20 mt-0 w-full rounded-3xl bg-zinc-100 max-w-[1347px] max-md:pl-5 max-md:mt-0 max-md:max-w-full">
@@ -84,6 +84,8 @@ function Search() {
             <div className="grow my-auto">Sort By</div>
           </div>
         </div>
+
+      
 
 
         <div className="shrink-0 mt-8 ml-4 w-full h-px border border-solid bg-zinc-500 border-zinc-500" />
@@ -134,4 +136,4 @@ function Search() {
   );
 }
 
-export default Search
+export default SearchBusinesses

@@ -4,6 +4,7 @@ import HeroPage from './HeroPage';
 import Search from './Search';
 import Profile from './Profile';
 import ManageLoans from './ManageLoans';
+import SearchBusinesses from './SearchBusinesses';
 import ScrollToTop from './ScrollToTop';
 
 const App = () => {
@@ -12,9 +13,10 @@ const App = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HeroPage />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/searchlenders" element={<Search />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/manageloans" element={<ManageLoans />} />
+        <Route path="/searchbusinesses" element={<SearchBusinesses />} />
       </Routes>
     </BrowserRouter>
   );
