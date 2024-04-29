@@ -6,6 +6,9 @@ import Profile from './Profile';
 import ManageLoans from './ManageLoans';
 import SearchBusinesses from './SearchBusinesses';
 import ScrollToTop from './ScrollToTop';
+import LenderProfile from './LenderProfile';
+import Testimonials from './Testimonials';
+import LenderDisplay from './LenderDisplay';
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/manageloans" element={<ManageLoans />} />
         <Route path="/searchbusinesses" element={<SearchBusinesses />} />
+        <Route path="/lenderprofile" element={<LenderProfile />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/lenderdisplay" element={<LenderDisplay />} />
       </Routes>
     </BrowserRouter>
   );
